@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        int refill = 100;
+        int refill = 1001;
         int bonus = refill / 100;
         int balance = refill + bonus;
 
@@ -10,9 +10,11 @@ public class Main {
         } else {
             balance = refill;
         }
-        if (bonus < 10) {
+
+        if (refill <= 1000) {
             bonus = 0;
         }
+
 
         System.out.println("Вы пополнили счет. Ваш баланс составляет: " + balance + " рублей");
         System.out.println("Вам начисленно бонусов: " + bonus);
