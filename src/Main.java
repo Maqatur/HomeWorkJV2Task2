@@ -9,9 +9,6 @@ public class Main {
             balance = refill + bonus;
         } else {
             balance = refill;
-        }
-
-        if (refill <= 1000) {
             bonus = 0;
         }
 
